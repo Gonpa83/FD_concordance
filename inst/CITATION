@@ -1,0 +1,20 @@
+citHeader("To cite FD Concordance in publications use:")
+
+citEntry(
+  entry = "Manual",
+  title = "FD Concordance: Targeted Comparisons of Functional Diversity Metrics",
+  author = personList(
+    person("Gonzalo", "Sotomayor"),
+    person("Marie Anne Eurie", "Forio"),
+    person("Christine", "Van der heyden"),
+    person("Patricio X.", "Lozano Rodríguez"),
+    person("Peter L. M.", "Goethals")
+  ),
+  year = "2026",
+  note = "R package version 0.0.5",
+  textVersion = paste(
+    "Sotomayor G, Forio MAE, Van der heyden C, Lozano Rodríguez PX,",
+    "Goethals PLM (2026). FD Concordance: Targeted Comparisons of",
+    "Functional Diversity Metrics. R package version 0.0.5."
+  )
+)

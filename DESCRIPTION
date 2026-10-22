@@ -1,0 +1,16 @@
+Package: fdconcordance
+Title: Targeted Comparisons of Functional Diversity Metrics
+Version: 0.0.5
+Authors@R: c(
+    person("Gonzalo", "Sotomayor", role = c("aut", "cre"), email = "gonzalo.sotomayor-v@uhemisferios.edu.ec"),
+    person("Marie Anne Eurie", "Forio", role = "aut"),
+    person("Christine", "Van der heyden", role = "aut"),
+    person("Patricio X.", "Lozano Rodríguez", role = "aut"),
+    person("Peter L. M.", "Goethals", role = "aut"))
+Description: Implements continuous association, percentile agreement and
+    richness-controlled residual comparisons for selected metrics when
+    overlap is suspected. Provides tables and visual reports without automatic
+    index selection. Development version with manuscript reference comparisons.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, mgcv, graphics, grDevices, utils
