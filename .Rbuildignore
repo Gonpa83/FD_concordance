@@ -1,0 +1,4 @@
+^shiny-app$
+^CITATION\.cff$
+^\.git$
+^\.gitignore$
