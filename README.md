@@ -8,22 +8,21 @@ This is a development release prepared for publication. Manuscript reference com
 
 ## Install
 
-R and mgcv are required. mgcv is normally included with standard R installations. If it is missing, install it first.
-
-```r
-install.packages("mgcv") # Only if missing.
-install.packages(file.choose(), repos = NULL, type = "source")
-library(fdconcordance)
-```
-
-Choose the downloaded fdconcordance source archive in the file picker.
-
-This repository is private during manuscript review. Once it is made public, installation from GitHub will be available with:
+R and mgcv are required. mgcv is normally included with standard R installations. This repository is public. To install the package directly from GitHub, run:
 
 ```r
 install.packages("remotes") # Only if missing.
 remotes::install_github("Gonpa83/FD_concordance")
+library(fdconcordance)
 ```
+
+To run the included teaching example and generate a report:
+
+```r
+source(system.file("examples", "quick_start.R", package = "fdconcordance"))
+```
+
+The example uses artificial data; it does not reproduce the manuscript's empirical analyses. Installation of a downloaded GitHub ZIP differs from installation of an R source-package archive; the GitHub command above avoids that ambiguity.
 
 ## Companion Shiny application
 
@@ -76,7 +75,7 @@ This uses small artificial teaching data. It is not a biological simulation stud
 
 ## Interpretation
 
-Technical minimum-data checks do not establish scientifically adequate sample size. Consider independent groups, replication, model complexity, variation and required precision. Group random intercepts do not model every form of temporal or spatial dependence. Raw-index and residual Spearman coefficients are reported descriptively, without P-values. Grouping in the regression models does not adjust the pooled correlations. Residual association depends on the fitted richness models. Findings apply to the examined dataset and do not establish ecological equivalence.
+Technical minimum-data checks do not establish scientifically adequate sample size. Consider independent groups, replication, model complexity, variation and required precision. Group random intercepts do not model every form of temporal or spatial dependence. Raw-index and residual Spearman coefficients are reported descriptively. Grouping in the regression models does not adjust the pooled correlations. Residual association depends on the fitted richness models. Findings apply to the examined dataset and do not establish ecological equivalence.
 
 Curve bands are approximate pointwise 95 percent intervals for the fitted mean, not prediction intervals. Grouped curves exclude the group random intercept; reported fit statistics include fitted group effects.
 
