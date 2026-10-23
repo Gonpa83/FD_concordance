@@ -32,7 +32,7 @@ ui <- fluidPage(
     tabPanel('About',h3('Four complementary analytical stages'),
       tags$ol(tags$li('Regression of one index against the other.'),tags$li('Spearman rank association.'),
               tags$li('Percentile classes and class-level Jaccard agreement.'),tags$li('Optional residual concordance after richness control.')),
-      p('Grouping adds a random intercept for the sampling unit to the additive models. Raw-index and residual Spearman coefficients are descriptive: no Spearman P-values or significance tests are reported. Regression P-values refer to the fitted regression models.'),
+      p('Grouping adds a random intercept for the sampling unit to the additive models. Raw-index and residual Spearman coefficients are descriptive. Model summaries report regression P-values.'),
       p('Percentile classes may differ in size when values are tied. The curve band is an approximate pointwise 95% interval for the fitted mean, not a prediction interval.'),
       p('Minimum input checks are computational safeguards, not sample-size recommendations. Interpret concordance using the biological question and sampling design.'),
       p('Development interface. This app compares index values; it does not calculate diversity indices from raw trait or abundance data.'))
