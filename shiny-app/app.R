@@ -14,7 +14,7 @@ ui <- fluidPage(
    uiOutput('sheet_control'),
    conditionalPanel("input.upload != null",selectInput('separator','Text-file separator',c('Comma'=',','Semicolon'=';','Tab'='\t'))),
    uiOutput('columns'),
-   checkboxInput('grouped','Repeated observations from the same site or lake',FALSE),
+   checkboxInput('grouped','Repeated observations from the same sampling unit',FALSE),
    conditionalPanel('input.grouped',uiOutput('group_column')),
    checkboxInput('control','Control for taxonomic richness',TRUE),
    conditionalPanel('input.control',uiOutput('richness_column')),
@@ -64,7 +64,7 @@ server <- function(input,output,session){
    tagList(h4('2. Select your indices'),selectInput('predictor','Predictor (horizontal axis)',n,selected=n[1]),
            selectInput('response','Response (vertical axis)',n,selected=n[2]))
  })
- output$group_column <- renderUI(selectInput('group','Site or lake identifier',names(values())))
+ output$group_column <- renderUI(selectInput('group','Sampling unit identifier',names(values())))
  output$richness_column <- renderUI({n<-numeric_names();pick<-grep('richness|^R$',n,ignore.case=TRUE,value=TRUE)
    selectInput('richness','Richness column',n,selected=if(length(pick)) pick[1] else tail(n,1))})
  observeEvent(input$grouped,{if(isTRUE(input$grouped))updateSelectInput(session,'model',selected='gam')})
@@ -80,7 +80,7 @@ server <- function(input,output,session){
   tryCatch({
    a<-values();req(input$predictor,input$response)
    if(!isTRUE(input$rationale))stop('Please confirm that there is a prior reason to investigate overlap.')
-   if(isTRUE(input$grouped)&&input$model!='gam')stop('For repeated observations, select the additive model with a site or lake identifier.')
+   if(isTRUE(input$grouped)&&input$model!='gam')stop('For repeated observations, select the additive model with a sampling unit identifier.')
    if(isTRUE(input$grouped)&&input$group %in% c(input$predictor,input$response,if(isTRUE(input$control)) input$richness))
       stop('The grouping identifier must be distinct from the numeric analysis columns.')
    withProgress(message='Calculating and preparing figures',value=.1,{
