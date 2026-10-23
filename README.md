@@ -41,7 +41,7 @@ After installing the package, use `citation("fdconcordance")` for the software c
 
 ## One dataset and two metrics
 
-Use one row per sampling observation. The selected index values must belong to the same observation. A grouping column identifies repeated observations from the same site or lake. Richness control is optional.
+Use one row per sampling observation. The selected index values must belong to the same observation. A grouping column identifies repeated observations from the same sampling unit. Richness control is optional.
 
 ```r
 values <- read.csv("my_values.csv")
