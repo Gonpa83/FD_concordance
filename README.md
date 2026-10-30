@@ -37,7 +37,7 @@ The app accepts CSV, TXT, TSV and Excel tables of precomputed index values. It p
 
 ## Citation
 
-After installing the package, use `citation("fdconcordance")` for the software citation. A version-specific archive DOI can be added once a public release has been archived.
+After installing the package, use `citation("fdconcordance")` for the software citation. The version-specific software DOI is https://doi.org/10.5281/zenodo.23809787.
 
 ## One dataset and two metrics
 
@@ -85,3 +85,7 @@ Gonzalo Sotomayor, Marie Anne Eurie Forio, Christine Van der heyden, Patricio X.
 
 GPL-3. Full license text is in COPYING. External dependencies retain their own licenses. This release contains no empirical research datasets or computer-specific analysis paths.
 
+
+## Archived software version
+
+FD Concordance v0.0.5 (R package and companion Shiny source code) is archived at https://doi.org/10.5281/zenodo.23809787. This software DOI is separate from the article DOI.
