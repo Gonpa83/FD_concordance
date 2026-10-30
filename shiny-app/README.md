@@ -22,3 +22,6 @@ The app.R file and core folder form a standalone Shiny deployment directory. Dep
 
 The two functions in core must remain byte-identical to the corresponding files in the package R directory. The app loads them directly so the hosted app does not need an unpublished package installation.
 
+## Archived software version
+
+FD Concordance v0.0.5 (R package and companion Shiny source code) is archived at https://doi.org/10.5281/zenodo.23809787. This software DOI is separate from the article DOI.
