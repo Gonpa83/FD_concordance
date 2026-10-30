@@ -18,3 +18,6 @@ license: GPL-3.0-only
 url: "https://github.com/Gonpa83/FD_concordance"
 repository-code: "https://github.com/Gonpa83/FD_concordance"
 abstract: "R package and companion Shiny application for targeted comparisons of precomputed functional diversity metrics using continuous associations, percentile agreement, and richness-controlled residual comparisons."
+
+doi: 10.5281/zenodo.23809787
+date-released: 2026-10-30
