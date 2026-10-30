@@ -21,3 +21,4 @@ Uploads and generated reports use temporary server storage. The app does not del
 The app.R file and core folder form a standalone Shiny deployment directory. Deploy this folder to a Shiny-compatible service using an account controlled by the authors. No credentials belong in source control. No hosting subscription or deployment has been created by preparing this folder.
 
 The two functions in core must remain byte-identical to the corresponding files in the package R directory. The app loads them directly so the hosted app does not need an unpublished package installation.
+
