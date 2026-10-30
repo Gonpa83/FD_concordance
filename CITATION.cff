@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use FD Concordance, please cite this software."
+type: software
+title: "FD Concordance: Targeted Comparisons of Functional Diversity Metrics"
+version: 0.0.5
+authors:
+  - family-names: Sotomayor
+    given-names: Gonzalo
+  - family-names: Forio
+    given-names: Marie Anne Eurie
+  - family-names: Van der heyden
+    given-names: Christine
+  - family-names: Lozano Rodríguez
+    given-names: Patricio X.
+  - family-names: Goethals
+    given-names: Peter L. M.
+license: GPL-3.0-only
+url: "https://github.com/Gonpa83/FD_concordance"
+repository-code: "https://github.com/Gonpa83/FD_concordance"
+abstract: "R package and companion Shiny application for targeted comparisons of precomputed functional diversity metrics using continuous associations, percentile agreement, and richness-controlled residual comparisons."
