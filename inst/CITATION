@@ -11,10 +11,13 @@ citEntry(
     person("Peter L. M.", "Goethals")
   ),
   year = "2026",
+  doi = "10.5281/zenodo.23809787",
+  url = "https://doi.org/10.5281/zenodo.23809787",
   note = "R package version 0.0.5",
   textVersion = paste(
     "Sotomayor G, Forio MAE, Van der heyden C, Lozano Rodríguez PX,",
     "Goethals PLM (2026). FD Concordance: Targeted Comparisons of",
-    "Functional Diversity Metrics. R package version 0.0.5."
+    "Functional Diversity Metrics. R package version 0.0.5.",
+    "https://doi.org/10.5281/zenodo.23809787"
   )
 )
